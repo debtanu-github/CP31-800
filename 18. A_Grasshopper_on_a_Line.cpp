@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define endl '\n'
+#define int long long
+const int MOD = 1e9 + 7;
+const int INF = LLONG_MAX >> 1;
+signed main() {
+    ios::sync_with_stdio(false); cin.tie(NULL);
+    int tc; cin >> tc;
+    while (tc--) {
+        int n,k;
+        cin>>n>>k;
+
+        if(k>n || n%k!=0){
+          cout<<1<<endl;
+          cout<<n<<endl;
+        }else if(n%k==0){
+          cout<<2<<endl;
+          cout<<n-1<<" "<<1<<endl;
+        }
+    }
+}
